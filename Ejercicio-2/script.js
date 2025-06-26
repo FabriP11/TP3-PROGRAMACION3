@@ -1,5 +1,7 @@
-const listaPalabras = ["manzana", "banana", "pera", "durazno", "frutilla", "mango", "kiwi",
-  "naranja", "limón", "sandía", "uva", "cereza", "piña", "papaya", "melón"];
+const listaPalabras = ["Manzana", "Banana", "Pera", "Durazno", "Frutilla", "Mora", "Kiwi",
+  "Naranja", "Limón", "Sandía", "Uva", "Cereza", "Piña", "Membrillo", "Melón", "Nuez",
+  "Granada", "Higo", "Coco", "Maracuyá", "Tamarindo", "Pomelo"];
+
 const form = document.getElementById('formFiltro');
 const input = document.getElementById('entradaFiltro');
 const resultado = document.getElementById('resultado');

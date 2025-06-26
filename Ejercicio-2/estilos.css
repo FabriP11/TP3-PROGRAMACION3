@@ -13,6 +13,19 @@ h1 {
     margin-bottom: 20px;
     text-align: center;
 }
+.cuadrado {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+#resultado {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+    
+}
 
 form {
     background-color: #fff7e6;
@@ -42,16 +55,4 @@ button {
 
 button:hover:not(:disabled) {
     background-color: #ffc247;
-}
-
-button:disabled {
-    background-color: #ddd;
-    cursor: not-allowed;
-}
-
-#resultado {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-top: 15px;
-    text-align: center;
 }
