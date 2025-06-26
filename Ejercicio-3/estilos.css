@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+    color: #222;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    font-style: bold;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+div {
+    background-color: #fff7e6;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contenedorLista {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+#listaTareas {
+   padding-left: 20px;
+} 
+
+li {
+    background-color: #ffffff;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+    font-size: 1rem;
+}
+
+button {
+    font-size: 1rem;
+    background-color: #ffcc70;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+button:hover:not(:disabled) {
+    background-color: #ffc247;
+}
+
