@@ -5,15 +5,21 @@ const operacion = document.getElementById('operacion');
 const botonCalcular = document.getElementById('botonCalcular');
 const resultado = document.getElementById('resultado');
 
-operacion.addEventListener('change', () => {
-  if (operacion.value === 'division') {
-    botonCalcular.disabled = true;
-    resultado.textContent = 'No se puede realizar una división';
+function verificarDivisionPorCero() {
+  const op = operacion.value;
+  const valor2 = parseFloat(numero2.value);
+
+  if (op === 'division' && valor2 === 0) {
+    botonCalcular.style.display = 'none';
+    resultado.textContent = 'No se puede dividir por cero.';
   } else {
-    botonCalcular.disabled = false;
+    botonCalcular.style.display = 'inline-block';
     resultado.textContent = '';
   }
-});
+}
+
+operacion.addEventListener('change', verificarDivisionPorCero);
+numero2.addEventListener('input', verificarDivisionPorCero);
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -33,12 +39,12 @@ form.addEventListener('submit', (e) => {
       res = a * b;
       break;
     case 'division':
-      res = 'No permitido';
+      res = a / b;
       break;
     default:
       res = 'Operación no válida';
   }
 
   resultado.textContent = `El resultado es: ${res}`;
-  
 });
+
