@@ -1,6 +1,7 @@
-const listaPalabras = ["manzana", "banana", "pera", "durazno", "frutilla", "mango"];
+const listaPalabras = ["manzana", "banana", "pera", "durazno", "frutilla", "mango", "kiwi",
+  "naranja", "limón", "sandía", "uva", "cereza", "piña", "papaya", "melón"];
 const form = document.getElementById('formFiltro');
-const input = document.getElementById('inputFiltro');
+const input = document.getElementById('entradaFiltro');
 const resultado = document.getElementById('resultado');
 const mensaje = document.getElementById('mensaje');
 
@@ -18,7 +19,7 @@ form.addEventListener('submit', (e) => {
   const texto = input.value.trim().toLowerCase();
 
   if (texto === "") {
-    mensaje.textContent = "Por favor, ingresá un texto para filtrar.";
+    mensaje.textContent = "Por favor, ingresa letra para filtrar.";
     resultado.innerHTML = "";
     return;
   }
