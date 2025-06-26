@@ -11,6 +11,13 @@ h1 {
     text-align: center;
 }
 
+p {
+    font-style: bold;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
 form {
     background-color: #fff7e6;
     padding: 20px;
@@ -41,7 +48,4 @@ button:hover:not(:disabled) {
     background-color: #ffc247;
 }
 
-button:disabled {
-    background-color: #ddd;
-    cursor: not-allowed;
-}
+
