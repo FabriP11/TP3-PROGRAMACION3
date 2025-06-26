@@ -1,16 +1,16 @@
 const form = document.getElementById('calculoForm');
-const num1 = document.getElementById('num1');
-const num2 = document.getElementById('num2');
+const numero1 = document.getElementById('numero1');
+const numero2 = document.getElementById('numero2');
 const operacion = document.getElementById('operacion');
-const btnCalcular = document.getElementById('botonCalcular');
+const botonCalcular = document.getElementById('botonCalcular');
 const resultado = document.getElementById('resultado');
 
 operacion.addEventListener('change', () => {
   if (operacion.value === 'division') {
-    btnCalcular.disabled = true;
+    botonCalcular.disabled = true;
     resultado.textContent = 'No se puede realizar una división';
   } else {
-    btnCalcular.disabled = false;
+    botonCalcular.disabled = false;
     resultado.textContent = '';
   }
 });
@@ -18,8 +18,8 @@ operacion.addEventListener('change', () => {
 form.addEventListener('submit', (e) => {
   e.preventDefault();
 
-  const a = parseFloat(num1.value);
-  const b = parseFloat(num2.value);
+  const a = parseFloat(numero1.value);
+  const b = parseFloat(numero2.value);
   let res;
 
   switch (operacion.value) {
