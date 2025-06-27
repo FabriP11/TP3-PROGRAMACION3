@@ -47,4 +47,3 @@ form.addEventListener('submit', (e) => {
 
   resultado.textContent = `El resultado es: ${res}`;
 });
-
