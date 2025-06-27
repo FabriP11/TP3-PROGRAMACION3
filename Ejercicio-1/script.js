@@ -11,10 +11,12 @@ function verificarDivisionPorCero() {
 
   if (op === 'division' && valor2 === 0) {
     botonCalcular.style.display = 'none';
-    resultado.textContent = 'No se puede dividir por cero.';
+    resultado.textContent = 'No se puede dividir por cero';
+    resultado.classList.add('error');
   } else {
     botonCalcular.style.display = 'inline-block';
     resultado.textContent = '';
+    resultado.classList.remove('error');
   }
 }
 
@@ -46,4 +48,5 @@ form.addEventListener('submit', (e) => {
   }
 
   resultado.textContent = `El resultado es: ${res}`;
+  resultado.classList.remove('error');
 });
